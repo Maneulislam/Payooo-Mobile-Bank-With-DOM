@@ -1,4 +1,8 @@
 
+// -------------------------------------------
+// Login
+// -------------------------------------------
+
 document.getElementById('btn-login').addEventListener('click', function (event) {
     event.preventDefault();
 
@@ -16,3 +20,11 @@ document.getElementById('btn-login').addEventListener('click', function (event) 
         alert("Invalid Number");
     }
 })
+
+
+
+// -------------------------------------------
+// Add Money
+// -------------------------------------------
+
+

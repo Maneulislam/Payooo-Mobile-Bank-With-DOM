@@ -25,7 +25,8 @@
                         <img src="assets/Group.png" alt="">
                     </div>
                     <div class="flex-1">
-                        <p class="text-2xl font-extrabold mb-1">$45000</p>
+                        <p id="" class="text-2xl font-extrabold mb-1">$ <span id="main-balance">4500</span>
+                        </p>
                         <p>Available Balance</p>
 
                     </div>
@@ -125,10 +126,6 @@
 
                             <form class="card-body">
 
-
-
-
-
                                 <fieldset class="fieldset">
 
                                     <!-- Select -->
@@ -142,18 +139,18 @@
 
 
                                     <label class="label font-bold text-black">Bank Account Number</label>
-                                    <input id="number-field" value="01791106969" type="number" class="input rounded-3xl"
+                                    <input id="number-field" type="number" class="input rounded-3xl"
                                         placeholder="Enter Your Number" required />
                                     <label class="label font-bold text-black">Amount to Add</label>
-                                    <input id="pin-field" value="1234" type="text" class="input rounded-3xl"
+                                    <input id="add-amount-field" type="text" class="input rounded-3xl"
                                         placeholder="Add Amount to withdraw" required />
-                                    <label class="label font-bold text-black">Pin Number</label>
+                                    <label class="label font-bold text-black">PIN</label>
 
                                     <input id="pin-field" type="text" class="input rounded-3xl"
                                         placeholder="Enter 4 digit pin number" required />
                                     <div><a class="link link-hover">Forgot password?</a></div>
-                                    <button id="btn-login"
-                                        class="btn bg-blue-400 text-white rounded-3xl mt-4">Login</button>
+                                    <button id="btn-add-money" class="btn bg-blue-400 text-white rounded-3xl mt-4">Add
+                                        Money</button>
                                 </fieldset>
                             </form>
                         </div>
@@ -168,6 +165,10 @@
 
     </section>
 
+
+    <!-- JavaScript File -->
+
+    <script src="js/addMoney.js"></script>
 </body>
 
 </html>
