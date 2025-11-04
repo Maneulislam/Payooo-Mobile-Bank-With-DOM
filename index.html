@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" li>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <!--  Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--  daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="bg-slate-800">
+
+    <section class="max-w-md min-h-screen mx-auto  bg-slate-200 ">
+
+        <header class="">
+            <nav class=" flex justify-center items-center">
+                <div class="mt-40 flex justify-center items-center relative w-9/12">
+                    <img class="absolute " src="assets/bg.png" alt="">
+                    <img class="pb-20 " src="assets/Group.png" alt="">
+                </div>
+            </nav>
+        </header>
+
+        <!-- Login form -->
+
+        <div class="hero  ">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                    <fieldset class="fieldset">
+                        <label class="label font-bold text-black">Phone Number</label>
+                        <input id="number-field" value="01791106969" type="number" class="input rounded-3xl"
+                            placeholder="Enter Your Number" required />
+                        <label class="label font-bold text-black">PIN</label>
+                        <input id="pin-field" value="1234" type="text" class="input rounded-3xl"
+                            placeholder="Enter Your PIN" required />
+                        <div><a class="link link-hover">Forgot password?</a></div>
+                        <button id="btn-login" class="btn bg-blue-400 text-white rounded-3xl mt-4">Login</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+    <!-- Js -->
+    <script src="js/form.js"></script>
+</body>
+
+</html>
