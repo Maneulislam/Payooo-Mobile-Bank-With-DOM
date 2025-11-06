@@ -5,9 +5,8 @@
 
 document.getElementById('addmoney-box').addEventListener('click', function () {
 
-    document.getElementById('addmoney-box').style.border = '3px solid blue'
-
-
+    document.getElementById('addmoney-box').style.borderColor = 'blue'
+    document.getElementById('cashout-box').style.borderColor = '';
 
     document.getElementById('cashout-section').style.display = 'none';
     document.getElementById('transfer-money-section').style.display = 'none';
@@ -29,8 +28,8 @@ document.getElementById('addmoney-box').addEventListener('click', function () {
 
 document.getElementById('cashout-box').addEventListener('click', function () {
 
-    document.getElementById('cashout-box').style.border = '3px solid blue';
-
+    document.getElementById('addmoney-box').style.borderColor = ''
+    document.getElementById('cashout-box').style.borderColor = 'blue';
 
     document.getElementById('addmoney-section').style.display = 'none';
     document.getElementById('transfer-money-section').style.display = 'none';
@@ -53,6 +52,13 @@ document.getElementById('cashout-box').addEventListener('click', function () {
 // -------------------------------------------------
 
 document.getElementById('transfer-money-box').addEventListener('click', function () {
+
+    document.getElementById('transfer-money-box').style.borderColor = 'blue';
+
+    document.getElementById('addmoney-box').style.borderColor = ''
+    document.getElementById('cashout-box').style.borderColor = '';
+
+
     toggleHandle("addmoney-section", "none");
     toggleHandle('cashout-section', 'none');
     toggleHandle('bonus-cupon-section', 'none');
@@ -81,6 +87,15 @@ document.getElementById('transfer-money-box').addEventListener('click', function
 
 document.getElementById('get-bonus-box').addEventListener('click', function () {
 
+    document.getElementById('get-bonus-box').style.borderColor = 'blue';
+
+
+    document.getElementById('addmoney-box').style.borderColor = ''
+    document.getElementById('cashout-box').style.borderColor = '';
+    document.getElementById('transfer-money-box').style.borderColor = '';
+
+
+
     toggleHandle('addmoney-section', 'none');
     toggleHandle('cashout-section', 'none');
     toggleHandle('transfer-money-section', 'none');
@@ -103,6 +118,13 @@ document.getElementById('get-bonus-box').addEventListener('click', function () {
 
 document.getElementById('pay-bill-box').addEventListener('click', function () {
 
+    document.getElementById('pay-bill-box').style.borderColor = 'blue';
+
+    document.getElementById('get-bonus-box').style.borderColor = '';
+    document.getElementById('addmoney-box').style.borderColor = ''
+    document.getElementById('cashout-box').style.borderColor = '';
+    document.getElementById('transfer-money-box').style.borderColor = '';
+
     toggleHandle('addmoney-section', 'none');
     toggleHandle('cashout-section', 'none');
     toggleHandle('transfer-money-section', 'none');
@@ -120,6 +142,15 @@ document.getElementById('pay-bill-box').addEventListener('click', function () {
 // -------------------------------------------------
 
 document.getElementById('transaction-box').addEventListener('click', function () {
+
+    document.getElementById('transaction-box').style.borderColor = 'blue';
+
+
+    document.getElementById('pay-bill-box').style.borderColor = '';
+    document.getElementById('get-bonus-box').style.borderColor = '';
+    document.getElementById('addmoney-box').style.borderColor = ''
+    document.getElementById('cashout-box').style.borderColor = '';
+    document.getElementById('transfer-money-box').style.borderColor = '';
 
     toggleHandle('addmoney-section', 'none');
     toggleHandle('cashout-section', 'none');
