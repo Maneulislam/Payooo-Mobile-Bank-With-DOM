@@ -31,7 +31,7 @@
 
                     </div>
                     <div class="flex-none">
-                        <button class="btn px-3 py-2 flex">
+                        <button id="btn-logout" class="btn px-3 py-2 flex">
                             <div>Log Out</div>
 
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 ml-2" viewBox="0 0 640 640">
@@ -65,38 +65,38 @@
 
                 <div class="grid grid-cols-3 gap-4 mt-10">
 
-                    <div
+                    <div id="addmoney-box"
                         class="border border-gray-400 flex flex-col justify-center items-center py-5 space-y-2 rounded-xl cursor-pointer">
                         <img src="assets/wallet1.png" alt="">
                         <p>Add Money</p>
                     </div>
 
-                    <div
-                        class="border border-gray-400 flex flex-col justify-center items-center py-5 space-y-2 rounded-xl">
+                    <div id="cashout-box"
+                        class="border border-gray-400 flex flex-col justify-center items-center py-5 space-y-2 rounded-xl cursor-pointer">
                         <img src="assets/send1.png" alt="">
                         <p>Cashout</p>
                     </div>
 
-                    <div
-                        class="border border-gray-400 flex flex-col justify-center items-center py-5 space-y-2 rounded-xl">
+                    <div id="transfer-money-box"
+                        class="border border-gray-400 flex flex-col justify-center items-center py-5 space-y-2 rounded-xl cursor-pointer">
                         <img src="assets/money1.png" alt="">
                         <p>Transfer Money</p>
                     </div>
 
-                    <div
-                        class="border border-gray-400 flex flex-col justify-center items-center py-5 space-y-2 rounded-xl">
+                    <div id="get-bonus-box"
+                        class="border border-gray-400 flex flex-col justify-center items-center py-5 space-y-2 rounded-xl cursor-pointer">
                         <img src="assets/bonus1.png" alt="">
                         <p>Get Bonus</p>
                     </div>
 
-                    <div
-                        class="border border-gray-400 flex flex-col justify-center items-center py-5 space-y-2 rounded-xl">
+                    <div id="pay-bill-box"
+                        class="border border-gray-400 flex flex-col justify-center items-center py-5 space-y-2 rounded-xl cursor-pointer">
                         <img src="assets/purse1.png" alt="">
                         <p>Pay Bill</p>
                     </div>
 
-                    <div
-                        class="border border-gray-400 flex flex-col justify-center items-center py-5 space-y-2 rounded-xl">
+                    <div id="transaction-box"
+                        class="border border-gray-400 flex flex-col justify-center items-center py-5 space-y-2 rounded-xl cursor-pointer">
                         <img src="assets/transaction1.png" alt="">
                         <p>Transactions</p>
                     </div>
@@ -105,10 +105,10 @@
 
 
             <!------------------------------------------------- -->
-            <!-- Latest payment Section -->
+            <!-- Add Money Section -->
             <!------------------------------------------------- -->
 
-            <section class="bg-gray-100  mt-5 pt-2 pb-12">
+            <section id="addmoney-section" class="bg-gray-100  mt-5 pt-2 pb-12 hidden">
                 <!-- Text -->
                 <div class="m-6">
                     <h2 class="text-xl font-bold">Add Money</h2>
@@ -120,7 +120,7 @@
                 <div>
 
                     <div class="hero  ">
-                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-3xl">
 
 
 
@@ -155,10 +155,240 @@
                             </form>
                         </div>
                     </div>
-
-
                 </div>
             </section>
+
+
+
+
+            <!------------------------------------------------- -->
+            <!-- Cash Out Section -->
+            <!------------------------------------------------- -->
+
+
+            <section id="cashout-section" class="bg-gray-100  mt-5 pt-2 pb-12 hidden">
+                <!-- Text -->
+                <div class="m-6">
+                    <h2 class="text-xl font-bold">Cash Out</h2>
+
+                </div>
+
+                <!-- Form -->
+
+                <div>
+
+                    <div class="hero  ">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-3xl">
+
+
+
+                            <form class="card-body">
+
+                                <fieldset class="fieldset">
+
+
+                                    <label class="label font-bold text-black">Agent Number</label>
+                                    <input id="number-field-cashout" type="number" class="input rounded-3xl"
+                                        placeholder="Enter Agent Number" required />
+                                    <label class="label font-bold text-black">Amount</label>
+                                    <input id="add-amount-field-cashout" type="text" class="input rounded-3xl"
+                                        placeholder="Add Amount to withdraw" required />
+                                    <label class="label font-bold text-black">PIN</label>
+
+                                    <input id="pin-field-cashout" type="text" class="input rounded-3xl"
+                                        placeholder="Enter 4 digit pin number" required />
+                                    <div><a class="link link-hover">Forgot password?</a></div>
+                                    <button id="btn-cashout"
+                                        class="btn bg-blue-400 text-white rounded-3xl mt-4">Withdraw Money</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+            <!------------------------------------------------- -->
+            <!-- Transfer Money Section -->
+            <!------------------------------------------------- -->
+
+
+            <section id="transfer-money-section" class="bg-gray-100  mt-5 pt-2 pb-12 hidden">
+                <!-- Text -->
+                <div class="m-6">
+                    <h2 class="text-xl font-bold">Transfer Money</h2>
+
+                </div>
+
+                <!-- Form -->
+
+                <div>
+
+                    <div class="hero  ">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-3xl">
+
+
+
+                            <form class="card-body">
+
+                                <fieldset class="fieldset">
+
+
+                                    <label class="label font-bold text-black">User Account Number</label>
+                                    <input id="number-field-transfer-money" type="number" class="input rounded-3xl"
+                                        placeholder="Enter Number" required />
+                                    <label class="label font-bold text-black">Amount</label>
+                                    <input id="add-amount-field-transfer-money" type="text" class="input rounded-3xl"
+                                        placeholder="Add Amount to transfer" required />
+                                    <label class="label font-bold text-black">PIN</label>
+
+                                    <input id="pin-field-transfer-money" type="text" class="input rounded-3xl"
+                                        placeholder="Enter 4 digit pin number" required />
+                                    <div><a class="link link-hover">Forgot password?</a></div>
+                                    <button id="btn-transfer-money"
+                                        class="btn bg-blue-400 text-white rounded-3xl mt-4">Withdraw Money</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!------------------------------------------------- -->
+            <!-- Get Bonus Section -->
+            <!------------------------------------------------- -->
+
+
+            <section id="bonus-cupon-section" class="bg-gray-100  mt-5 pt-2 pb-12 hidden">
+                <!-- Text -->
+                <div class="m-6">
+                    <h2 class="text-xl font-bold">Bonus Cupon</h2>
+
+                </div>
+
+                <!-- Form -->
+
+                <div>
+
+                    <div class="hero  ">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-3xl">
+
+
+
+                            <form class="card-body">
+
+                                <fieldset class="fieldset">
+
+
+                                    <label class="label font-bold text-black">Enter Bonus Cupon</label>
+                                    <input id="number-field-bonus-cupon" type="number" class="input rounded-3xl"
+                                        placeholder="Enter Your Cupon" required />
+
+                                    <button id="btn-bonus-cupon" class="btn bg-blue-400 text-white rounded-3xl mt-4">Get
+                                        Bonus</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!------------------------------------------------- -->
+            <!-- Pay Bill Section -->
+            <!------------------------------------------------- -->
+
+
+
+            <section id="pay-bill-section" class="bg-gray-100  mt-5 pt-2 pb-12 hidden">
+                <!-- Text -->
+                <div class="m-6">
+                    <h2 class="text-xl font-bold">Pay Bill</h2>
+
+                </div>
+
+                <!-- Form -->
+
+                <div>
+
+                    <div class="hero  ">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-3xl">
+
+
+
+                            <form class="card-body">
+
+                                <fieldset class="fieldset">
+
+                                    <!-- Select -->
+                                    <label class="label font-bold text-black">Select to Pay</label>
+                                    <select class="select rounded-3xl">
+                                        <option disabled selected>Select Biller</option>
+                                        <option>Education Fee</option>
+                                        <option>Polli Biddut Bill</option>
+                                        <option>Gas Bill</option>
+                                        <option>Shopping Bill</option>
+                                    </select>
+
+
+                                    <label class="label font-bold text-black">Biller Account Number</label>
+                                    <input id="number-field-pay-bill" type="number" class="input rounded-3xl"
+                                        placeholder="Enter Account Number" required />
+                                    <label class="label font-bold text-black">Amount to Pay</label>
+                                    <input id="add-amount-field-pay-bill" type="text" class="input rounded-3xl"
+                                        placeholder="Add Amount to Pay" required />
+                                    <label class="label font-bold text-black">PIN</label>
+
+                                    <input id="pin-field-pay-bill" type="text" class="input rounded-3xl"
+                                        placeholder="Enter 4 digit pin number" required />
+                                    <div><a class="link link-hover">Forgot password?</a></div>
+                                    <button id="btn-pay-bill" class="btn bg-blue-400 text-white rounded-3xl mt-4">Pay
+                                        Bill</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!------------------------------------------------- -->
+            <!-- Transaction Section -->
+            <!------------------------------------------------- -->
+
+
+            <section id="transaction-section" class="bg-gray-100  mt-5 pt-2 pb-12 hidden">
+                <!-- Text -->
+                <div class="m-6">
+                    <h2 class="text-xl font-bold">Transaction</h2>
+
+                </div>
+
+                <!-- Form -->
+
+                <div>
+
+                    <div class="hero ">
+
+                        <div id="transaction-container"
+                            class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl space-y-5">
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
 
 
         </main>
@@ -168,7 +398,16 @@
 
     <!-- JavaScript File -->
 
+    <script src="js/utilities.js"></script>
+
+    <script src="js/logout.js"></script>
+    <script src="js/transaction.js"></script>
+    <script src="js/pay-bill.js"></script>
+    <script src="js/bonus-cupon.js"></script>
+    <script src="js/transfer-money.js"></script>
     <script src="js/addMoney.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/cashout.js"></script>
 </body>
 
 </html>
