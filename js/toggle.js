@@ -7,6 +7,15 @@ document.getElementById('addmoney-box').addEventListener('click', function () {
 
     document.getElementById('addmoney-box').style.borderColor = 'blue'
     document.getElementById('cashout-box').style.borderColor = '';
+    document.getElementById('transfer-money-box').style.borderColor = '';
+    document.getElementById('get-bonus-box').style.borderColor = '';
+    document.getElementById('pay-bill-box').style.borderColor = '';
+    document.getElementById('transaction-box').style.borderColor = '';
+
+
+
+
+
 
     document.getElementById('cashout-section').style.display = 'none';
     document.getElementById('transfer-money-section').style.display = 'none';
@@ -30,6 +39,10 @@ document.getElementById('cashout-box').addEventListener('click', function () {
 
     document.getElementById('addmoney-box').style.borderColor = ''
     document.getElementById('cashout-box').style.borderColor = 'blue';
+    document.getElementById('transfer-money-box').style.borderColor = '';
+    document.getElementById('get-bonus-box').style.borderColor = '';
+    document.getElementById('pay-bill-box').style.borderColor = '';
+    document.getElementById('transaction-box').style.borderColor = '';
 
     document.getElementById('addmoney-section').style.display = 'none';
     document.getElementById('transfer-money-section').style.display = 'none';
@@ -53,10 +66,13 @@ document.getElementById('cashout-box').addEventListener('click', function () {
 
 document.getElementById('transfer-money-box').addEventListener('click', function () {
 
-    document.getElementById('transfer-money-box').style.borderColor = 'blue';
-
     document.getElementById('addmoney-box').style.borderColor = ''
     document.getElementById('cashout-box').style.borderColor = '';
+    document.getElementById('transfer-money-box').style.borderColor = 'blue';
+    document.getElementById('get-bonus-box').style.borderColor = '';
+    document.getElementById('pay-bill-box').style.borderColor = '';
+    document.getElementById('transaction-box').style.borderColor = '';
+
 
 
     toggleHandle("addmoney-section", "none");
@@ -87,12 +103,13 @@ document.getElementById('transfer-money-box').addEventListener('click', function
 
 document.getElementById('get-bonus-box').addEventListener('click', function () {
 
-    document.getElementById('get-bonus-box').style.borderColor = 'blue';
-
-
     document.getElementById('addmoney-box').style.borderColor = ''
     document.getElementById('cashout-box').style.borderColor = '';
     document.getElementById('transfer-money-box').style.borderColor = '';
+    document.getElementById('get-bonus-box').style.borderColor = 'blue';
+    document.getElementById('pay-bill-box').style.borderColor = '';
+    document.getElementById('transaction-box').style.borderColor = '';
+
 
 
 
@@ -118,12 +135,13 @@ document.getElementById('get-bonus-box').addEventListener('click', function () {
 
 document.getElementById('pay-bill-box').addEventListener('click', function () {
 
-    document.getElementById('pay-bill-box').style.borderColor = 'blue';
-
-    document.getElementById('get-bonus-box').style.borderColor = '';
     document.getElementById('addmoney-box').style.borderColor = ''
     document.getElementById('cashout-box').style.borderColor = '';
     document.getElementById('transfer-money-box').style.borderColor = '';
+    document.getElementById('get-bonus-box').style.borderColor = '';
+    document.getElementById('pay-bill-box').style.borderColor = 'blue';
+    document.getElementById('transaction-box').style.borderColor = '';
+
 
     toggleHandle('addmoney-section', 'none');
     toggleHandle('cashout-section', 'none');
